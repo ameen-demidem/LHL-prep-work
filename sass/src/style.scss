@@ -1,6 +1,10 @@
-@import "reset";
+@mixin border-radius($radius) {
+	-web-kit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
 
-body {
-	font: 100% Helvetica, sans-serif;
-	background-color: #EFEFEF;
+.box {
+	@include border-radius(10px);
 }

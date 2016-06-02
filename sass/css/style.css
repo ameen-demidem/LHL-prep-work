@@ -1,12 +1,6 @@
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font: 100% Helvetica, sans-serif;
-  background-color: #EFEFEF;
+.box {
+  -web-kit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
 }
