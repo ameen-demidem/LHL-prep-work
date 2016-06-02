@@ -1,20 +1,13 @@
-.message {
-	border: 1px solid #ccc;
-	padding: 10px;
-	color: #333;
+.container {
+	width: 100%;
 }
 
-.success {
-	@extend .message;
-	border-color: green;
+article[role="main"] {
+	float: left;
+	width: 600px / 960px * 100%;
 }
 
-.error {
-	@extend .message;
-	border-color: red;
-}
-
-.warning {
-	@extend .message;
-	border-color: yellow;
+aside[role="complementary"] {
+	float: right;
+	width: 360px / 960px * 100%;
 }
