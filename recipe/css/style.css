@@ -1,0 +1,154 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: inherit;
+}
+
+.outline {
+  outline: 1px solid red;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+  background-color: honeydew;
+}
+
+.recipe-title {
+  text-align: center;
+}
+
+#figure {
+  float: left;
+  max-width: 50%;
+  margin-bottom: 10px;
+  padding: 0 2%;
+}
+
+.title-pic {
+  /* trying to make the picture aligned with the title */
+  font-size: 1.5em;
+  margin-top: 0.83em;
+
+  max-width: 100%;
+  box-shadow: 0px 0px 5px #000;
+}
+
+#caption {
+  width: 90%;
+  margin: 1em auto 10px auto;
+}
+
+#ingredients {
+  float: right;
+  max-width: 50%;
+  text-align: left;
+}
+
+#ingredient-list {
+  margin-bottom: 0;
+  width: 65%;
+}
+
+#bechamel-list{
+  margin-top: 0;
+  width: 65%;
+}
+
+#ingredient-list > li, #bechamel-list > li {
+  border-bottom: 1px solid black;
+  padding: 3px 0;
+}
+
+#ingredient-list > li.is-hover-active:hover, #bechamel-list > li.is-hover-active:hover {
+  line-height: 2;
+  background-color: lightgray;
+  border-radius: 25%;
+  padding: 5%;
+}
+
+#ingredient-list > li:last-of-type, #bechamel-list > li:last-of-type {
+  border: none;
+}
+
+h3 {
+  margin: 5px 0;
+}
+
+#prep-summary {
+  padding-left: 35px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+#realisation-left {
+  margin-top: 5px;
+  float:left;
+  margin-right:2em;
+  line-height: 1.3
+}
+
+#realisation-right {
+  margin-top: 5px;
+  list-style-type: none;
+  line-height: 1.3
+}
+
+main {
+  clear: both;
+  margin-top: 40px;
+}
+
+ol > li {
+  border-top: dotted 1px gray;
+  /*margin-top: 20px;*/
+  padding: 20px 0;
+  clear: both;
+}
+
+ol > li.current-instruction {
+  color: darkblue;
+  background: gainsboro;
+}
+
+.icon-box {
+  width: 20%;
+  padding-left: 2%;
+  float: right;
+  margin: 20px 10px 0 0;
+}
+
+.icon {
+  width: 100%;
+  border-radius: 25%;
+  /*filter: drop-shadow(10px 10px 10px blue);*/
+  box-shadow: 0px 0px 20px blue;
+}
+
+.icon:hover {
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px gray;
+  transform: rotate(360deg) scale(1.25);
+  transition: transform 1.5s, box-shadow 0s 1.5s;
+}
+
+em {
+  font-family: cursive;
+}
+
+.striked-out {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+}
+
+#button1, #button2 {
+   margin: auto 10px auto auto;
+}
